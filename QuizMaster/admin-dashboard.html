@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <button class="btn btn-danger" id="adminLogoutBtn">Logout</button>
+        </div>
+        
+        <div class="user-stats-grid">
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <div class="stat-value" id="totalUsers">0</div>
+                <p>Registered accounts</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Today</h3>
+                <div class="stat-value" id="activeToday">0</div>
+                <p>Users active in last 24 hours</p>
+            </div>
+            <div class="stat-card">
+                <h3>Quizzes Taken</h3>
+                <div class="stat-value" id="quizzesTaken">0</div>
+                <p>Total quizzes completed</p>
+            </div>
+            <div class="stat-card">
+                <h3>Avg. Score</h3>
+                <div class="stat-value" id="avgScore">0%</div>
+                <p>Average quiz score</p>
+            </div>
+        </div>
+        
+        <h2>User Management</h2>
+        <div class="table-responsive">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Joined</th>
+                        <th>Last Active</th>
+                        <th>Quizzes</th>
+                        <th>Avg. Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- Users will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

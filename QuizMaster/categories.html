@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="categories-container">
+        <h1>Welcome, <span id="displayUsername"></span>!</h1>
+        <h2>Choose Your Quiz Category</h2>
+        <div class="category-grid">
+            <div class="category-card" data-category="english">
+                <h2>English</h2>
+                <p>Test your grammar and vocabulary skills</p>
+            </div>
+            <div class="category-card" data-category="general-knowledge">
+                <h2>General Knowledge</h2>
+                <p>How much do you know about the world?</p>
+            </div>
+            <div class="category-card" data-category="computer-science">
+                <h2>Computer Science</h2>
+                <p>Programming, algorithms, and tech questions</p>
+            </div>
+            <div class="category-card" data-category="logical-reasoning">
+                <h2>Logical Reasoning</h2>
+                <p>Solve puzzles and logical problems</p>
+            </div>
+        </div>
+        <div class="user-actions">
+            <button class="btn btn-secondary" id="logoutBtn">Logout</button>
+            <button class="btn btn-danger" id="deleteAccountBtn">Delete Account</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Login Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-portal-container">
+        <div class="logo">
+            <h1>QuizMaster</h1>
+            <p>Knowledge at your fingertips</p>
+        </div>
+        
+        <div class="login-options">
+            <div class="login-card admin-login" id="adminLoginCard">
+                <div class="card-icon">👑</div>
+                <h2>Admin Login</h2>
+                <p>Access dashboard and user statistics</p>
+                <div class="card-overlay">
+                    <button class="btn" id="adminLoginBtn">Login as Admin</button>
+                </div>
+            </div>
+            
+            <div class="login-card user-login" id="userLoginCard">
+                <div class="card-icon">👤</div>
+                <h2>User Portal</h2>
+                <p>Take quizzes and track your progress</p>
+                <div class="card-overlay">
+                    <button class="btn btn-secondary" id="userLoginBtn">Continue as User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Admin Login Modal -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminUsername">Username:</label>
+                    <input type="text" id="adminUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Password:</label>
+                    <input type="password" id="adminPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="register-link">New admin? <a href="welcomess.html" id="adminRegisterLink">Register here</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
